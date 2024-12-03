@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
+
 <head>
-  <title>AZ box</title>
+    <title>AZ box</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #57412f;
+            color: white;
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container"></div>
-  <div class="s1"></div>
-  <div class="s2"></div>
-  <div class="s3"></div>
-  <div class="s4"></div>
-  <div class="s5"></div>
-  <div class="s6"></div>
+    <header>
+
+        <h1>AZ box</h1>
+        <div class="search-container">
+    <input type="text" id="search-input" class="search-input" placeholder="Buscar produtos..." oninput="showSuggestions()" autocomplete="off">
+    <div id="suggestions" class="suggestions-container"></div>
+  </div>
+  
+  </div>
+  
+    </header>
+
+    <section id="produto1">
+        <div>produto1</div>
+    </section>
+
+    <section id="produto2">
+        <div>produto2</div>
+    </section>
+
+    <section id="produto3">
+        <div>produto3</div>
+    </section>
+
 </body>
+
 </html>
